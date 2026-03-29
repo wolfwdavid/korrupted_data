@@ -1,12 +1,15 @@
 <script lang="ts">
 	import ProgressBar from '$lib/components/ProgressBar.svelte';
-	import { socialLinks, favorites, mediaCategories, yearlyGoals } from '$lib/data/media';
+	import { socialLinks, favorites, getMediaCategories, yearlyGoals } from '$lib/data/media';
+	import { base } from '$app/paths';
+
+	const mediaCategories = getMediaCategories();
 </script>
 
 <div class="page">
 	<!-- Hero -->
 	<header class="hero">
-		<img src="/images/caca1.gif" alt="Decorative" class="hero-gif" />
+		<img src="{base}/images/caca1.gif" alt="Decorative" class="hero-gif" />
 		<h1>Media Hub</h1>
 		<p class="subtitle">~ Social media</p>
 	</header>

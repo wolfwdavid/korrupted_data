@@ -151,7 +151,9 @@ export const favorites = {
 	Music: ['Taylor Swift', 'Mozart', 'ABBA']
 };
 
-export const mediaCategories = [
+import { base } from '$app/paths';
+
+export const getMediaCategories = () => [
 	{
 		name: 'Movies',
 		image: 'https://i.pinimg.com/236x/ee/c9/7c/eec97cef018802c79ccd46a7c1c3933b.jpg',
@@ -159,8 +161,8 @@ export const mediaCategories = [
 	},
 	{
 		name: 'Manga',
-		image: '/images/1.jpg',
-		href: '/manga'
+		image: `${base}/images/1.jpg`,
+		href: `${base}/manga`
 	},
 	{
 		name: 'Series',
@@ -170,17 +172,17 @@ export const mediaCategories = [
 	{
 		name: 'Videogames',
 		image: 'https://i.pinimg.com/564x/3b/33/b9/3b33b9158df26f355424259cc38b5c14.jpg',
-		href: '/videogames'
+		href: `${base}/videogames`
 	},
 	{
 		name: 'Books',
-		image: '/images/2.jpg',
-		href: '/books'
+		image: `${base}/images/2.jpg`,
+		href: `${base}/books`
 	},
 	{
 		name: 'Music',
 		image: 'https://i.pinimg.com/564x/1d/d0/06/1dd0060c420293762cbcd7cf1d7110ff.jpg',
-		href: '/music'
+		href: `${base}/music`
 	}
 ];
 

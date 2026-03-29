@@ -1,4 +1,8 @@
-<a href="/" class="back-link">← Media Hub</a>
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
+<a href="{base}/" class="back-link">← Media Hub</a>
 
 <style>
 	.back-link {
