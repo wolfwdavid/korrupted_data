@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+	--bg: #1a1118;
+	--bg-card: #241c22;
+	--bg-card-hover: #2e242b;
+	--text: #e8dce4;
+	--text-muted: #9a8a94;
+	--accent: #d4a0b9;
+	--accent-bright: #e8b4cf;
+	--accent-dim: #8a5e74;
+	--border: #3a2e36;
+	--progress-bg: #2e242b;
+	--progress-fill: #d4a0b9;
+	--tag-bg: #2e242b;
+	--star: #e8c170;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+	line-height: 1.6;
+	min-height: 100vh;
+}
+
+h1, h2, h3 {
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
+}
+
+a {
+	color: var(--accent-bright);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: var(--text);
+}
+
+::selection {
+	background: var(--accent-dim);
+	color: var(--text);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-dim);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--accent);
+}
