@@ -11,7 +11,7 @@
 	<header class="hero">
 		<img src="{base}/images/caca1.gif" alt="Decorative" class="hero-gif" />
 		<h1>Media Hub</h1>
-		<p class="subtitle">~ Social media</p>
+		<p class="subtitle">~ Where starting over is not so bad</p>
 	</header>
 
 	<!-- Social Links -->
